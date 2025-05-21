@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoadMapper - Bhone Myint Kyaw</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #313f5b 0%, #192154 50%, #02012a 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+  <div class="container mx-auto px-4 py-16">
+    <a href="../index.html" class="inline-flex items-center text-white hover:text-white mb-8">
+      ← Back to Portfolio
+    </a>
+
+    <article class="max-w-5xl mx-auto">
+      <h1 class="text-5xl font-bold mb-8">RoadMapper - AI Career Planning Tool</h1>
+
+      <div class="glass-card p-8 rounded-xl shadow-lg">
+        <h2 class="text-2xl text-white font-bold mb-4">Overview</h2>
+        <p class="text-lg text-white mb-6">
+          RoadMapper is a smart web app that generates personalized learning paths for users based on their goals and current skillset. Using AI-powered suggestions and milestone tracking, users can build structured roadmaps in fields like software development, UI/UX, and data science.
+        </p>
+
+        <h3 class="text-xl text-white font-bold mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Interactive goal selection and skill assessment</li>
+          <li>Dynamic roadmap generation using OpenAI GPT API</li>
+          <li>Progress tracker and milestone reminders</li>
+          <li>User accounts with persistent roadmap storage</li>
+          <li>Export to PDF and share via link options</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Technology Stack</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Frontend:</strong> React, Tailwind CSS, Framer Motion</li>
+          <li><strong>Backend:</strong> Node.js, Express</li>
+          <li><strong>AI Service:</strong> OpenAI API (GPT 3.5)</li>
+          <li><strong>Database:</strong> Firebase Realtime DB</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Challenges & Solutions</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Challenge:</strong> Keeping roadmap suggestions relevant across various fields</li>
+          <li><strong>Solution:</strong> Tuned system prompts and filtered responses for category-specific output</li>
+          <li><strong>Challenge:</strong> Saving user progress securely</li>
+          <li><strong>Solution:</strong> Used Firebase auth with Firestore rules and real-time sync</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Impact</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Helped users build confidence and direction in self-learning journeys</li>
+          <li>Served as a prototype for future edtech personalization tools</li>
+          <li>Enabled feature reuse in future goal-tracking projects</li>
+        </ul>
+
+      </div>
+    </article>
+  </div>
+</body>
+</html>

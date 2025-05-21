@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventPulse - Bhone Myint Kyaw</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #313f5b 0%, #192154 50%, #02012a 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+  <div class="container mx-auto px-4 py-16">
+    <a href="../index.html" class="inline-flex items-center text-white hover:text-white mb-8">
+      ← Back to Portfolio
+    </a>
+
+    <article class="max-w-5xl mx-auto">
+      <h1 class="text-5xl font-bold mb-8">EventPulse - Smart Event Manager</h1>
+
+      <div class="glass-card p-8 rounded-xl shadow-lg">
+        <h2 class="text-2xl text-white font-bold mb-4">Overview</h2>
+        <p class="text-lg text-white mb-6">
+          EventPulse is a web-based event management app designed for event organizers to manage participants, ticketing, and attendance through QR-based check-ins and analytics dashboards.
+        </p>
+
+        <h3 class="text-xl text-white font-bold mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>QR code ticket generation and scanning system</li>
+          <li>Role-based admin panel with event performance metrics</li>
+          <li>Automated check-in and attendance tracking</li>
+          <li>Real-time stats: participant counts, drop-offs, demographics</li>
+          <li>Email confirmations and PDF ticket delivery</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Technology Stack</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Frontend:</strong> React, Tailwind CSS</li>
+          <li><strong>Backend:</strong> Node.js, Express</li>
+          <li><strong>Database:</strong> PostgreSQL</li>
+          <li><strong>Libraries:</strong> qrcode, chart.js</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Challenges & Solutions</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Challenge:</strong> Preventing duplicate QR check-ins</li>
+          <li><strong>Solution:</strong> Used token-based scanning with one-time validation logic</li>
+          <li><strong>Challenge:</strong> Managing admin permissions securely</li>
+          <li><strong>Solution:</strong> Implemented JWT roles and protected API routes</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Impact</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Enabled smoother management of medium-scale tech events</li>
+          <li>Reduced manual attendance errors and admin effort</li>
+          <li>Inspired future work in digital badge and certificate automation</li>
+        </ul>
+
+      </div>
+    </article>
+  </div>
+</body>
+</html>

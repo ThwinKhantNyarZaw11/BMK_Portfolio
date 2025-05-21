@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediNote - Bhone Myint Kyaw</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #313f5b 0%, #192154 50%, #02012a 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+  <div class="container mx-auto px-4 py-16">
+    <a href="../index.html" class="inline-flex items-center text-white hover:text-white mb-8">
+      ← Back to Portfolio
+    </a>
+
+    <article class="max-w-5xl mx-auto">
+      <h1 class="text-5xl font-bold mb-8">MediNote - Secure Medical Notes App</h1>
+
+      <div class="glass-card p-8 rounded-xl shadow-lg">
+        <h2 class="text-2xl text-white font-bold mb-4">Overview</h2>
+        <p class="text-lg text-white mb-6">
+          MediNote is a healthcare-focused note-taking application built for doctors and healthcare professionals. It provides organized patient tagging, encrypted notes, and custom exports to streamline clinical documentation in secure environments.
+        </p>
+
+        <h3 class="text-xl text-white font-bold mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Patient-linked note system with automatic sorting</li>
+          <li>Secure storage with end-to-end note encryption</li>
+          <li>Export to PDF for physical records or sharing</li>
+          <li>Search and filter by patient name, condition, or tags</li>
+          <li>Dark mode for clinical environments</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Technology Stack</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Frontend:</strong> React, Tailwind CSS</li>
+          <li><strong>Backend:</strong> Firebase Auth + Firestore</li>
+          <li><strong>Export:</strong> PDFMake, html2canvas</li>
+          <li><strong>Security:</strong> CryptoJS for encryption, role-based access</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Challenges & Solutions</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Challenge:</strong> Securing sensitive medical notes on client side</li>
+          <li><strong>Solution:</strong> Used AES encryption with user-specific secret keys</li>
+          <li><strong>Challenge:</strong> Designing UI for fast notetaking with minimal clicks</li>
+          <li><strong>Solution:</strong> Built keyboard-accessible layout with quick-tagging UX</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Impact</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Improved speed and structure of daily patient note workflows</li>
+          <li>Demonstrated secure frontend data handling practices</li>
+          <li>Used in prototypes for mobile-first digital health tools</li>
+        </ul>
+
+      </div>
+    </article>
+  </div>
+</body>
+</html>

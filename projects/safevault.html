@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafeVault - Bhone Myint Kyaw</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg {
+        background: linear-gradient(135deg, #313f5b 0%, #192154 50%, #02012a 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+  <div class="container mx-auto px-4 py-16">
+    <a href="../index.html" class="inline-flex items-center text-white hover:text-white mb-8">
+      ← Back to Portfolio
+    </a>
+
+    <article class="max-w-5xl mx-auto">
+      <h1 class="text-5xl font-bold mb-8">SafeVault - Encrypted File Storage App</h1>
+
+      <div class="glass-card p-8 rounded-xl shadow-lg">
+        <h2 class="text-2xl text-white font-bold mb-4">Overview</h2>
+        <p class="text-lg text-white mb-6">
+          SafeVault is a secure web application that enables users to upload and store files with end-to-end encryption. Featuring two-factor authentication, password-protected access, and dynamic download URLs, the app ensures user privacy and data integrity. This project demonstrates expertise in authentication, file handling, secure backend logic, and cloud-based storage strategies.
+        </p>
+
+        <h3 class="text-xl text-white font-bold mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>End-to-end encrypted file uploads and AES-based file encryption</li>
+          <li>Two-factor authentication (2FA) using OTP via email</li>
+          <li>Unique, expirable download links with access control</li>
+          <li>Role-based dashboard with upload history and metadata</li>
+          <li>Self-destruct feature for files after one-time download</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Technology Stack</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Frontend:</strong> React, Tailwind CSS</li>
+          <li><strong>Backend:</strong> Node.js, Express, JWT</li>
+          <li><strong>Database:</strong> MongoDB (with GridFS for file storage)</li>
+          <li><strong>Security:</strong> AES encryption, bcrypt, CORS, environment variables</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Challenges & Solutions</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li><strong>Challenge:</strong> Secure file encryption with performance</li>
+          <li><strong>Solution:</strong> Used streaming AES encryption with file chunks to reduce memory load</li>
+          <li><strong>Challenge:</strong> 2FA integration without external services</li>
+          <li><strong>Solution:</strong> Built a custom email-based OTP generator and validator with timeouts</li>
+        </ul>
+
+        <h3 class="text-xl text-white font-bold mb-3">Impact</h3>
+        <ul class="list-disc list-inside text-white mb-6 space-y-2">
+          <li>Helped users confidently share sensitive files securely online</li>
+          <li>Applied full-stack principles with real-world encryption standards</li>
+          <li>Inspired future enhancements including biometric login and cloud integration</li>
+        </ul>
+
+      </div>
+    </article>
+  </div>
+</body>
+</html>
